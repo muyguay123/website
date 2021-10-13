@@ -1,4 +1,22 @@
-<center>
-  <h1>collatz conjecture</h1>
-  <p>made by joe</p>
-  <iframe src="https://trinket.io/embed/python/985a9a4639" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<body>
+<form action="form_handler.php" onsubmit="formSubmit()">
+Number: <input type="text" name="number"> <input type="submit" name="submit" value="Submit">
+</form>
+</body>
+
+<script>
+function formSubmit() {
+  var num = document.getElementsByName("number")[0].value;
+  while (num != 1) {
+    
+    if (num % 2 == 0) {
+      num = num / 2;
+    } else {
+      num = 3*num+1;
+    }
+
+    console.log(num)
+    document.write(num+"<br>")
+  }
+}
+</script>
