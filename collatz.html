@@ -13,7 +13,7 @@ function formSubmit() {
   document.write(num + "<br>")
   while (num != 1) {
     
-    if (num % 2 == 0) {
+    if (num.modulo(2) == 0) {
       num = num.dividedBy(2);
     } else {
       num = num.multipliedBy(3).plus(1);
