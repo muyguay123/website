@@ -7,6 +7,7 @@ Number: <input type="text" name="number"> <input type="submit" name="submit" val
 <script>
 function formSubmit() {
   var num = document.getElementsByName("number")[0].value;
+  document.write(num + "<br>")
   while (num != 1) {
     
     if (num % 2 == 0) {
@@ -16,7 +17,7 @@ function formSubmit() {
     }
 
     console.log(num)
-    document.write(num+"<br>")
+    document.write(num + "<br>")
   }
 }
 </script>
