@@ -14,9 +14,9 @@ function formSubmit() {
   while (num != 1) {
     
     if (num % 2 == 0) {
-      num = num / 2;
+      num = num.dividedBy(2);
     } else {
-      num = 3*num+1;
+      num = num.multipliedBy(3).plus(1);
     }
 
     console.log(num)
